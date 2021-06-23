@@ -34,8 +34,8 @@ function agregarTweet(e){
     const tweet=document.querySelector('#tweet').value;
     const titulo=document.querySelector('#titulo').value;
     //validación
-    if(tweet=== ''){
-        mostrarError('el tweet no puede estar vacio');
+    if(tweet=== ''|| titulo===''){
+        mostrarError('Los campos no puede estar vacios');
         return;// evita que se ejecuten mas lineas d codigo
     }
 
