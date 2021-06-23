@@ -86,16 +86,20 @@ function crearHTML(){
 
 
             //crear html
-            const li= document.createElement('li');
-
+            const li2= document.createElement('h4');
+            const li= document.createElement('h6');
+           
             //añadir el texto
+            li2.innerText=tweet.titulo;
             li.innerText=tweet.tweet;
-            li.innerText=tweet.titulo;
+           
             //asignar el boton 
             li.appendChild(btnEliminar);
-
+           
             //insertarlo en el html
-            listaTweets.appendChild(li)
+            li2.appendChild(li);
+            listaTweets.appendChild(li2);
+            
         });
 
     }
